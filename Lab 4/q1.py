@@ -9,7 +9,6 @@ Requirement adjustments:
  - Prints top 10 most frequent n-grams for each order.
 """
 
-from __future__ import annotations
 from pathlib import Path
 from collections import defaultdict, deque
 from typing import Dict, Tuple, Deque

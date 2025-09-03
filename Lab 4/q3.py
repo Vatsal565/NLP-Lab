@@ -28,8 +28,6 @@ Outputs:
 Config knobs below: INPUT_FILENAME, SENTENCE_FILE, ADD_K, MAX_N, MAX_UNIQUE_PER_ORDER.
 """
 
-from __future__ import annotations
-
 from pathlib import Path
 from collections import defaultdict, deque
 from typing import Dict, Tuple, Deque, List

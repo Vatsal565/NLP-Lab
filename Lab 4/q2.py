@@ -31,8 +31,6 @@ Config knobs near top: INPUT_FILENAME, MAX_N, ADD_K, MAX_UNIQUE_PER_ORDER (optio
 Note: Pruning (if enabled) may drop some rare higher-order n-grams (count==1) to save memory.
 """
 
-from __future__ import annotations
-
 from pathlib import Path
 from collections import defaultdict, deque
 from typing import Dict, Tuple, Deque
