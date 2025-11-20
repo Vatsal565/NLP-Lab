@@ -1,0 +1,10 @@
+Sentence,Label
+Check out https://example.com for more info!,Inform
+"Order 3 items, get 1 free! Limited offer!!!",Promo
+Your package #12345 will arrive tomorrow.,Inform
+"Win $1000 now, visit http://winbig.com!!!",Promo
+"Meeting at 3pm, don't forget to bring the files.",Reminder
+"Exclusive deal for you: buy 2, get 1 free!!!",Promo
+Download the report from https://reports.com.,Inform
+The meeting is starting in 10 minutes.,Reminder
+Reminder: submit your timesheet by 5pm today.,Reminder

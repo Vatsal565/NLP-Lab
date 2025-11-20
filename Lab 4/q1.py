@@ -1,5 +1,5 @@
 """
-Lab 4 - Simple N‑gram Models (Unigram, Bigram, Trigram, Quadragram)
+Lab 4 - Simple N-gram Models (Unigram, Bigram, Trigram, Quadragram)
 
 Requirement adjustments:
  - Memory-friendly: stream tokens instead of loading whole list; maintain rolling window.
@@ -58,7 +58,7 @@ def print_top(counts: Dict[Tuple[str, ...], int], n: int):
 		print(f"  {' '.join(gram):<60} {c}")
 	print()
 
-inp = Path("indiccorp_gu_words.txt")
+inp = Path("out.txt")
 print(f"Streaming tokens from: {inp}")
 
 counts: Dict[int, Dict[Tuple[str, ...], int]] = {n: defaultdict(int) for n in range(1, MAX_N + 1)}

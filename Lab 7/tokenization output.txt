@@ -1,0 +1,2 @@
+Tokenized sentences saved to F:\NLP Lab\Lab 7\indiccorp_gu_tokenized.txt     
+Train: 17438656, Val: 2179832, Test: 2179832

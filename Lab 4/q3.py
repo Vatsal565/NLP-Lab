@@ -1,5 +1,5 @@
 """
-Lab 4 - Q3: Sentence Probability with Smoothed N‑gram Models
+Q3: Sentence Probability with Smoothed N-gram Models
 
 Task:
   Use the smoothed language models (Add-One, Add-K, Token-Type score) to compute

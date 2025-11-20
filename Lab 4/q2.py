@@ -36,14 +36,13 @@ from collections import defaultdict, deque
 from typing import Dict, Tuple, Deque
 
 # ---------------- Configuration ---------------- #
-INPUT_FILENAME = "indiccorp_gu_words.txt"
+INPUT_FILENAME = "out.txt"
 MAX_N = 4              # up to quadragram
 ADD_K = 0.5            # K for Add-K smoothing (change as desired)
 TOP_PRINT = 8          # small preview in console
 MAX_UNIQUE_PER_ORDER = None  # e.g., 600000 to cap memory; None disables pruning
 
 
-# ---------------- File Location ---------------- #
 def find_input_file() -> Path:
 	here = Path(__file__).resolve().parent
 	candidates = [
@@ -68,7 +67,6 @@ def stream_tokens(path: Path):
 					yield t
 
 
-# ---------------- Counting ---------------- #
 def prune_if_needed(counts: Dict[Tuple[str, ...], int]):
 	if MAX_UNIQUE_PER_ORDER is None:
 		return
@@ -80,7 +78,6 @@ def prune_if_needed(counts: Dict[Tuple[str, ...], int]):
 		del counts[k]
 
 
-# ---------------- Probability Helpers ---------------- #
 def mle_conditional(ngram: Tuple[str, ...], counts_n: Dict[Tuple[str, ...], int], counts_prev: Dict[Tuple[str, ...], int]) -> float:
 	hist = ngram[:-1]
 	denom = counts_prev.get(hist, 0)
@@ -105,7 +102,6 @@ def token_type_score(ngram: Tuple[str, ...], counts_n: Dict[Tuple[str, ...], int
 	return counts_n.get(ngram, 0) + len(set(predicted))
 
 
-# ---------------- Output ---------------- #
 def write_smoothed(n: int,
 				   counts_n: Dict[Tuple[str, ...], int],
 				   counts_prev: Dict[Tuple[str, ...], int],
