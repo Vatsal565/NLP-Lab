@@ -2,3 +2,9 @@ Lab 1/tokenized_gujarati_corpus
 Lab 1/.*txt
 Lab 3/tokenized_gujarati_corpus
 Lab 3/cleaned_tokenized_gujarati_corpus
+Lab 4/bigrams_smoothing.tsv
+Lab 4/trigrams.tsv
+Lab 7/vocab.json
+Lab 4/quadragrams.tsv
+Lab 4/trigrams_smoothing.tsv
+Lab 4/quadragrams_smoothing.tsv
